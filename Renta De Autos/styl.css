@@ -1,0 +1,71 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Título del catálogo */
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Grid del catálogo */
+.catalogo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Tarjeta individual */
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Imagen del auto */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Info del auto */
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #0077cc;
+}
+
+.info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}

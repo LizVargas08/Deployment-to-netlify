@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renta de Autos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png.jpg" alt="Logo">
+                <h1>Traslados Almar</h1>
+            </div>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+    </header>
+
+    <nav id="menu" class="hidden">
+        <ul>
+            <li><a href="autos.html">Catálogo</a></li>
+            <li><a href="reserva.html">Reserva</a></li>
+            <li><a href="contactanos.html">Contáctanos</a></li>
+            <li><a href="soloadministrador.html">Solo Administradores</a></li>
+            
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Sobre Nosotros</h2>
+            <p>Bienvenido a nuestra empresa de renta de autos. Ofrecemos una amplia variedad de vehículos a precios accesibles.</p>
+        </section>
+    </main>
+
+    <!-- Carrusel -->
+    <section class="carrusel">
+        <div class="slides">
+            <img src="img/hiace.jpeg" class="slide active" alt="Auto 1">
+            <img src="img/sprinter.jpg" class="slide" alt="Auto 2">
+            <img src="img/taxi.img.jpg" class="slide" alt="Auto 3">
+        </div>
+        <button class="prev" onclick="moverSlide(-1)">❮</button>
+        <button class="next" onclick="moverSlide(1)">❯</button>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+
+        let currentIndex = 0;
+        const slides = document.querySelectorAll(".slide");
+
+        function mostrarSlide(index) {
+            slides.forEach(slide => slide.classList.remove("active"));
+            currentIndex = (index + slides.length) % slides.length;
+            slides[currentIndex].classList.add("active");
+        }
+
+        function moverSlide(dir) {
+            mostrarSlide(currentIndex + dir);
+        }
+
+        mostrarSlide(currentIndex);
+    </script>
+</body>
+</html>

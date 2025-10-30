@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro De Autos En Renta</title>
+    <link rel="stylesheet" href="Styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="renta">
+            <form action="" id="formAuto">
+    <h1>Ingrese Los Datos Necesarios</h1>
+    <br>
+    <br>
+    <label for="Marca">Ingresa La Marca</label>
+    <input type="text" id="marca">
+    <br>
+    <br>
+    <label for="Modelo">Ingresa El Modelo</label>
+    <input type="text" id="modelo">
+    <br>
+    <br>
+    <label for="Precio">Precio Por Dia</label>
+    <input type="text" id="precio">
+    <br>
+    <br>
+    <label for="placa">Numero de placas</label>
+    <input type="text" id="placa">
+    <br>
+    <br>
+    <label for="pasa">Cantidad De Pasajeros</label>
+    <input type="text" id="pasajeros">
+    <br>
+    <br>
+    <label for="color">Color</label>
+    <input type="text" id="color">
+    <br>
+    <br>
+    <label for="imagen">Imagen del auto:</label>
+<input type="file" id="imagen" name="imagen" accept="image/*">
+<img id="preview" src="#" alt="Vista previa de la imagen" style="display:none; width: 200px; margin-top: 10px;">
+</form>
+    <br>
+    <br>
+    <button type="submit" id="btn">Agregar</button>
+</div>
+</div>
+</body>
+<script src="firebase-config.js"></script>
+</html>

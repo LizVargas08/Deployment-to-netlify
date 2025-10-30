@@ -1,0 +1,52 @@
+body {
+    background-color: #e8f0fe; /* azul clarito para fondo */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.contacto-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 102, 255, 0.15);
+    text-align: center;
+}
+
+.contacto-container h2 {
+    font-size: 2rem;
+    color: #1565c0; /* azul fuerte */
+    margin-bottom: 30px;
+}
+
+.red-social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    background: #e3f2fd; /* azul cielo */
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, background-color 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 102, 255, 0.05);
+    justify-content: left;
+}
+
+.red-social:hover {
+    transform: scale(1.03);
+    background-color: #bbdefb;
+}
+
+.red-social img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.red-social span {
+    font-size: 1.1rem;
+    color: #0d47a1;
+}
